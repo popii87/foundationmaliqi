@@ -213,7 +213,7 @@ p {
 /* End Header section */
 .founders-members>h1 {
     font-size: 4rem;
-    font-weight: 400;
+    font-weight: 300;
     color: black;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -560,6 +560,51 @@ p {
 }
 
 /* End Projects section */
+/* Contact */
+.contact-container > h1{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
+.contact-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin: 80px;
+    
+    
+}
+.contact-item{
+    margin: 3px;
+    border-radius: 15px;
+    background-image: linear-gradient(60deg, #bcbec0 0%, #585858 100%);
+    text-align: center;
+    
+}
+.contact-item .contact-img{
+    height: 100px;
+    width: 100px;
+    border-radius: 10%;
+    
+}
+.contact-content {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  .contact-item h5 {
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    color: rgb(19, 18, 18);
+    margin-top: 20px;
+  }
+  /* End Contact */
+
 /* Footer */
 #footer {
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
@@ -741,6 +786,9 @@ p {
     .founders-profiles {
         grid-template-columns: repeat(2, 1fr);
     }
+    .contact-items{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width:500px) {
@@ -749,6 +797,12 @@ p {
     }
 
     .profile {
+        text-align: center;
+    }
+    .contact-items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact-item{
         text-align: center;
     }
 }
