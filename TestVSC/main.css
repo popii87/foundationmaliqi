@@ -79,6 +79,11 @@ p {
     transition: 0.3s ease background-color;
 }
 
+#header img {
+    height: 70px;
+    width: 170px;
+}
+
 #header .nav-bar {
     display: flex;
     align-items: center;
@@ -206,7 +211,7 @@ p {
 }
 
 /* End Header section */
-.founders-members > h1{
+.founders-members>h1 {
     font-size: 4rem;
     font-weight: 400;
     color: black;
@@ -216,34 +221,38 @@ p {
     text-align: center;
 }
 
-.founders-profiles{
+.founders-profiles {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     margin: 80px;
-    
+
 }
-.profile{
+
+.profile {
     text-align: center;
 }
-.profile .profile-img{
+
+.profile .profile-img {
     height: 280px;
     width: 280px;
     border-radius: 50%;
-    
+
 }
+
 .user-name {
     margin-top: 30px;
     font-size: 35px;
-  }
-  .profile h5 {
+}
+
+.profile h5 {
     font-size: 18px;
     font-weight: 100;
     letter-spacing: 3px;
     color: #ccc;
-  }
-  
-  
+}
+
+
 /* Hero Section */
 #hero {
     background-image: url(./images/Enver-Maliqi.png);
@@ -321,8 +330,62 @@ p {
 
 /* End Hero Section */
 
+
+
+/*******************************/
+/********** About CSS **********/
+/*******************************/
+.about {
+    position: relative;
+    width: 100%;
+    padding: 45px 0;
+}
+
+.about .section-header {
+
+    margin-bottom: 30px;
+    margin-left: 0;
+}
+
+.about .about-img {
+    width: 100%;
+    height: 100vh;
+}
+
+.about .about-tab {
+    width: 100%;
+}
+
+.about .about-tab .nav.nav-pills .nav-link {
+    padding: 8px;
+    font-weight: 600;
+    background: none;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+    transition: none;
+}
+
+.about .about-tab .nav.nav-pills .nav-link:hover,
+.about .about-tab .nav.nav-pills .nav-link.active {
+    color: #FDBE33;
+    padding-bottom: 7px;
+    border-bottom: 3px solid #FDBE33;
+}
+
+.about .about-tab .tab-content {
+    padding: 15px 0 0 0;
+    background: transparent;
+}
+
+.about .about-tab .tab-content .container {
+    padding: 0;
+}
+
+
+
+/*******************************/
 /* Services Section */
-#services .services {
+/* #services .services {
     flex-direction: column;
     text-align: center;
     max-width: 1500px;
@@ -386,7 +449,7 @@ p {
 #services .service-item p {
     color: white;
     text-align: left;
-}
+} */
 
 /* End Services Section */
 
@@ -592,8 +655,8 @@ p {
     }
 
     /* End Hero */
-  
-   
+
+
     /* Services Section */
     #services .service-bottom .service-item {
         flex-basis: 45%;
@@ -660,7 +723,7 @@ p {
     }
 
     /* End header */
-    
+
 
     #services .service-bottom .service-item {
         flex-basis: 22%;
@@ -668,17 +731,18 @@ p {
     }
 }
 
-@media (max-width: 768px){
-    .founders-profiles{
+@media (max-width: 768px) {
+    .founders-profiles {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width:500px){
-    .founders-profiles{
+@media (max-width:500px) {
+    .founders-profiles {
         grid-template-columns: repeat(1, 1fr);
     }
-    .profile{
+
+    .profile {
         text-align: center;
     }
 }
